@@ -1,16 +1,25 @@
 import { RiDeleteBin2Line, RiRefreshLine } from 'react-icons/ri';
 import Button from '../UI/Button';
+import styles from './Todos.Actions.module.css';
 
-function TodosActions() {
+function TodosActions({
+  resetTodos,
+  deleteCompletedTodos,
+  completedTodosExist,
+}) {
   return (
-    <>
-      <Button titile="Reset Todos">
+    <div className={styles.todosActionsContainer}>
+      <Button titile="Reset Todos" onClick={resetTodos}>
         <RiRefreshLine />
       </Button>
-      <Button title="Clear Completed Todos">
+      <Button
+        title="Clear Completed Todos"
+        onClick={deleteCompletedTodos}
+        disabled={!completedTodosExist}
+      >
         <RiDeleteBin2Line />
       </Button>
-    </>
+    </div>
   );
 }
 
