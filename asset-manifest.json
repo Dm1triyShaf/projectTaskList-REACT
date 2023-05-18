@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/projectTaskList-REACT/static/css/main.5c8f3c9b.css",
+    "main.js": "/projectTaskList-REACT/static/js/main.06074988.js",
+    "index.html": "/projectTaskList-REACT/index.html",
+    "main.5c8f3c9b.css.map": "/projectTaskList-REACT/static/css/main.5c8f3c9b.css.map",
+    "main.06074988.js.map": "/projectTaskList-REACT/static/js/main.06074988.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c8f3c9b.css",
+    "static/js/main.06074988.js"
+  ]
+}
