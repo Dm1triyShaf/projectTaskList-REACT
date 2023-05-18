@@ -1,39 +1,20 @@
-# React Project for the React Course
+# https://dm1triyshaf.github.io/projectTaskList-REACT/
+# Описание
+#### Это проект "список дел"!
+Тут мы можем добавлять дела, помечать как сделанные и так же удалять из списка. Так же есть кнопка очистить все и кнопка удалять завешенные задачи
+Внизу отображается текст сколько задач мы завершили
+# Создание проекта
+В состоянии компонентов находится массив обьектов, в котором есть три свойсва text, isCompleted, id. При этом id для каждой задачи мы генерируем используя внешний пакет "uuid" с помощью которого мы получаем каждый раз уникальное значение, тем самым любая задача имеет уникальный id. Теперь мы можем использовать id для выполнения определенных действий с конкретной задачей (удаление задачи из списка) либо (изменения состояния задачи) 
+Кроме этого мы добавили две функции для удаления всех задач, а так же удалить только завершенные.
+Так же мы создали компонент button его мы сделали универсальным, что бы использовать повторно для этого испльзуем свойсво {children} тем самым даем возможность добавялть все что угодно на кнопки (так осуществлена передача иконок на разных кнопках)
+Так же на кнопках есть свойсва title, onClick и disablet-она отключает кнопку в интерфейсе, если нет завершенных задач.
+Стили для кнопки вынесены в отдельный файл для удобства. Так происходит с каждым компонентом
 
-## Available Scripts
+# Запуск
+Посмотреть проект можно перейдя по ссылке
+#### https://dm1triyshaf.github.io/projectTaskList-REACT/
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
+или 
+#### 1. скачать проект
+#### 2. npm i 
+#### 3. npm start
